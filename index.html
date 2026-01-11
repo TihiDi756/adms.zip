@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>ADM’S — École de danse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="./assets/Logo AdMS.jpg" type="image/png" sizes="32x32">
+
+  <style>
+    /* ===== RESET ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0b0b0b; color: #ffffff; line-height: 1.6; }
+    img { width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== VARIABLES ===== */
+    :root {
+      --bg-main: #0b0b0b;
+      --bg-section: #111111;
+      --bg-card: #161616;
+      --text-muted: #b5b5b5;
+      --accent: #ffffff;
+    }
+
+    /* ===== GLOBAL ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 80px 0; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+
+    h1 { font-size: 56px; margin-bottom: 20px; }
+    h2 { font-size: 36px; margin-bottom: 20px; }
+    h3 { font-size: 22px; margin-bottom: 10px; }
+
+    p { color: var(--text-muted); font-size: 17px; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 32px;
+      border: 1px solid #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("https://images.unsplash.com/photo-1524594154908-edd65b1a2f7a?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero p { max-width: 700px; margin: 0 auto; }
+
+    /* ===== SECTIONS ===== */
+    .two-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .section-dark { background: var(--bg-section); }
+
+    /* ===== CARDS ===== */
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card p {
+      padding: 12px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    /* ===== LIST ===== */
+    ul.custom-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    ul.custom-list li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 800px) {
+      h1 { font-size: 40px; }
+      h2 { font-size: 28px; }
+      .two-cols { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>AdM’S — École de danse</h1>
+      <h3>Discipline • Progression • Excellence</h3>
+      <p>
+        AdM’S est une école dédiée à la formation de danseurs dans un cadre structuré, sérieux et exigeant.
+        Ici, on ne vient pas juste danser. On vient apprendre et progresser.
+      </p>
+      <a href="https://wa.me/261376790839?text=Bonjour%2C%20je%20voudrais%20des%20informations%20pour%20l'inscription%20à%20l'école%20AdM'S." target="_blank" class="btn">Contacter l’école</a>
+    </div>
+  </section>
+
+  <!-- PRÉSENTATION -->
+  <section>
+    <div class="container two-cols">
+      <div>
+        <h2>L’école</h2>
+        <p>
+          AdM’S est un établissement de formation artistique.
+          Le projet est de construire, étape par étape, une véritable école d’arts.
+          Aujourd’hui, la danse est la première discipline développée au sein de l’école.
+        </p>
+        <p>
+          Notre priorité est de poser des bases solides : méthode, cadre, discipline et progression.
+        </p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="cours de danse">
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section class="section-dark">
+    <div class="container two-cols">
+      <div>
+        <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=900&q=80" alt="travail sérieux">
+      </div>
+      <div>
+        <h2>Notre vision</h2>
+        <p>
+          AdM’S est un projet d’école d’arts dédié à la formation dans plusieurs disciplines :
+          danse, musique, dessin, peinture et théâtre.
+        </p>
+        <p>
+          Ces disciplines seront intégrées progressivement, en fonction des moyens et des ressources disponibles,
+          sans jamais sacrifier la qualité de l’enseignement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCIPLINES -->
+  <section>
+    <div class="container">
+      <h2>Disciplines enseignées (danse)</h2>
+      <p>L’école propose une formation complète en danse à travers les styles suivants :</p>
+
+      <div class="grid-5" style="margin-top:30px;">
+        <div class="card">
+          <img src="./assets/hip-hop.jpg">
+          <p>Hip-hop</p>
+        </div>
+        <div class="card">
+          <img src="./assets/jump-7144088_1280.jpg">
+          <p>Krump</p>
+        </div>
+        <div class="card">
+          <img src="./assets/pexels-casnafu-31100107.jpg">
+          <p>Breakdance</p>
+        </div>
+        <div class="card">
+          <img src="./assets/Dancehall.jpg">
+          <p>Dancehall</p>
+        </div>
+        <div class="card">
+          <img src="./assets/friends-9519331_1280.jpg">
+          <p>Afro</p>
+        </div>
+        <div class="card">
+          <img src="./assets/man-6045120_1280.jpg">
+          <p>Amapiano</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRUCTURE -->
+  <section class="section-dark">
+    <div class="container">
+      <h2>Une vraie structure d’école</h2>
+      <p>
+        La formation est organisée par niveaux afin d’assurer une progression logique et sérieuse :
+      </p>
+      <ul class="custom-list">
+        <li>• Débutant</li>
+        <li>• Intermédiaire</li>
+        <li>• Avancé</li>
+        <li>• Professionnel</li>
+      </ul>
+      <p style="margin-top:15px;">
+        Les élèves sont encadrés par âge et accompagnés par niveau. La progression est suivie et évaluée.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTÉGRER -->
+  <section>
+    <div class="container">
+      <h2>Intégrer l’école</h2>
+      <p>
+        L’intégration à l’école se fait après prise de contact et orientation.
+      </p>
+      <p>
+        L’école se réserve le droit de placer chaque élève dans le groupe adapté à son niveau.
+      </p>
+      <p>
+        L’engagement, la régularité et le respect du cadre sont obligatoires.
+      </p>
+    </div>
+  </section>
+
+  <!-- POUR QUI -->
+  <section class="section-dark">
+    <div class="container">
+      <h2>À qui s’adresse l’école ?</h2>
+      <ul class="custom-list">
+        <li>✔️ À ceux qui veulent vraiment apprendre</li>
+        <li>✔️ À ceux qui acceptent la discipline</li>
+        <li>✔️ À ceux qui veulent progresser sérieusement</li>
+        <li>❌ Pas pour ceux qui veulent juste s’amuser sans engagement</li>
+        <li>❌ Pas pour ceux qui refusent le cadre</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container" style="text-align:center;">
+      <h2>Contacter l’école</h2>
+      <p>Adresse : Espace Jeune Tamaga (Toamasina)</p>
+      <a class="btn" href="https://wa.me/261376790839?text=Bonjour%2C%20je%20voudrais%20des%20informations%20pour%20l'inscription%20à%20l'école%20AdM'S." target="_blank">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © AdM’S — École de danse • Discipline • Progression • Excellence
+  </footer>
+
+</body>
+</html>

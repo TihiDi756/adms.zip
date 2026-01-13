@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>AdM’S — École de danse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,118 +12,7 @@
   <link rel="icon" href="./assets/Logo AdMS.jpg" type="image/png" sizes="32x32">
 
   <style>
-    /* ===== RESET ===== */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #0b0b0b; color: #ffffff; line-height: 1.6; }
-    img { width: 100%; display: block; }
-    a { text-decoration: none; color: inherit; }
-
-    /* ===== VARIABLES ===== */
-    :root {
-      --bg-main: #0b0b0b;
-      --bg-section: #111111;
-      --bg-card: #161616;
-      --text-muted: #b5b5b5;
-      --accent: #ffffff;
-    }
-
-    /* ===== GLOBAL ===== */
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    section { padding: 80px 0; }
-    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
-
-    h1 { font-size: 56px; margin-bottom: 20px; }
-    h2 { font-size: 36px; margin-bottom: 20px; }
-    h3 { font-size: 22px; margin-bottom: 10px; }
-
-    p { color: var(--text-muted); font-size: 17px; }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 32px;
-      border: 1px solid #fff;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    /* ===== HERO ===== */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background:
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-        url("https://images.unsplash.com/photo-1524594154908-edd65b1a2f7a?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero p { max-width: 700px; margin: 0 auto; }
-
-    /* ===== SECTIONS ===== */
-    .two-cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .section-dark { background: var(--bg-section); }
-
-    /* ===== CARDS ===== */
-    .grid-5 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border-radius: 12px;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .card p {
-      padding: 12px;
-      font-weight: 600;
-      color: #fff;
-    }
-
-    /* ===== LIST ===== */
-    ul.custom-list {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    ul.custom-list li {
-      margin-bottom: 10px;
-      font-size: 17px;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 30px;
-      color: #777;
-      font-size: 14px;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 800px) {
-      h1 { font-size: 40px; }
-      h2 { font-size: 28px; }
-      .two-cols { grid-template-columns: 1fr; }
-    }
+  
   </style>
 </head>
 <body>
@@ -280,4 +170,5 @@
 
 </body>
 </html>
+
 
